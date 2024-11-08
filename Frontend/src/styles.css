@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #28428c;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #ffffff; /* Facultatif : couleur du texte pour le contraste */
+  }
+  

@@ -1,0 +1,153 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+.icon-ai {
+    width: 45px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+.icon-database {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+.icon-check {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+
+  .logo {
+    width: 100px; 
+    height: auto;
+  }
+
+  .get-started-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo */
+  .logo1 {
+    width: 750px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Application Info */
+  .app-info h1 {
+    font-size: 28px;
+    color: #ffacd6;
+    margin: 10px 0;
+  }
+  
+  .app-info p {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  /* Developer Section */
+  .developers {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space the developers evenly */
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .developers h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffffff;
+    gap: 40px;
+  }
+  
+  .developer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+  }
+
+  .developer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+  }
+
+
+  
+  /* Developer Photo */
+  .developer-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Developer Description */
+  .developer h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  
+  .developer-description {
+    font-size: 16px;
+    color: #ffffff;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .features-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.features-list li {
+    background-color: #28428c; /* Light blue background for each feature */
+    margin: 10px 0; /* Space between list items */
+    padding: 10px; /* Padding inside each list item */
+    border-left: 5px solid #007BFF; /* Left border for emphasis */
+}
+
+.container {
+  max-width: 800px; /* Max width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #28428c; /* White background for the container */
+}
+
+.container h1 {
+  color: #ffacd6; /* Dark text for the main heading */
+  font-size: 2.5em; /* Larger font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.container h2 {
+  color: #ffacd6; /* Slightly lighter text for subheadings */
+  font-size: 1.8em; /* Font size for subheading */
+  margin-top: 40px; /* Space above the subheading */
+}
+
+.container p {
+  color: #ffffff; /* Gray text for paragraph */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+#meet {
+  color: #ffacd6;
+}

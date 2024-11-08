@@ -1,0 +1,85 @@
+/* Toolbar styles */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+.icon-ai {
+    width: 45px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+.icon-database {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+.icon-check {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+
+  .logo {
+    width: 100px; 
+    height: auto;
+  }
+  
+  .toolbar-buttons button {
+    margin-left: 8px;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    padding: 16px;
+    background-color: #28428c;
+  }
+  
+  /* Table styles */
+  .data-table {
+    width: 100%;
+    margin: 16px 0;
+    background: white;
+    border-radius: 4px;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  
+  .mat-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Action buttons styles */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .action-buttons button {
+    background-color: #ffacd6;
+    color: #ffffff;            
+    border-radius: 8px;        
+    margin-right: 50px;
+    padding: 15px 15px;
+  }
+
+
+
+  button {
+    font-size: 14px;
+    
+  }
+  

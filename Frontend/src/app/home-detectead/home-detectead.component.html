@@ -1,0 +1,77 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="toolbar">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img src="assets/logo-color.png" alt="logo" class="logo" />
+    </a>
+    <div class="toolbar-buttons">
+        <a routerLink="/ai-info" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/ai.png" alt="ai-info" class="icon-ai" />
+        </a>
+        <a routerLink="/database" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/database.png" alt="database" class="icon-database" />
+        </a>
+        <a routerLink="/check" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/check.png" alt="check" class="icon-check" />
+        </a>
+    </div>
+  </mat-toolbar>
+  
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Data Table -->
+    <table mat-table [dataSource]="dataSource" class="data-table" matSort>
+      <!-- No Column -->
+      <ng-container matColumnDef="no">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element">{{element.no}}</td>
+      </ng-container>
+  
+      <!-- Time Column -->
+      <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef>Time</th>
+        <td mat-cell *matCellDef="let element">{{element.time}}</td>
+      </ng-container>
+  
+      <!-- Source Column -->
+      <ng-container matColumnDef="source">
+        <th mat-header-cell *matHeaderCellDef>Source</th>
+        <td mat-cell *matCellDef="let element">{{element.source}}</td>
+      </ng-container>
+  
+      <!-- Destination Column -->
+      <ng-container matColumnDef="destination">
+        <th mat-header-cell *matHeaderCellDef>Destination</th>
+        <td mat-cell *matCellDef="let element">{{element.destination}}</td>
+      </ng-container>
+  
+      <!-- Protocol Column -->
+      <ng-container matColumnDef="protocol">
+        <th mat-header-cell *matHeaderCellDef>Protocol</th>
+        <td mat-cell *matCellDef="let element">{{element.protocol}}</td>
+      </ng-container>
+  
+      <!-- Length Column -->
+      <ng-container matColumnDef="length">
+        <th mat-header-cell *matHeaderCellDef>Length</th>
+        <td mat-cell *matCellDef="let element">{{element.length}}</td>
+      </ng-container>
+  
+      <!-- Header and Row Declarations -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <a routerLink="/visualize" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <button mat-raised-button color="primary">Visualize</button>
+      </a>
+      <a routerLink="/suspactions" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <button mat-raised-button color="accent">Suspicious Actions</button>
+      </a>
+      <a routerLink="/notify" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <button mat-raised-button color="warn">Notify</button>
+      </a>
+      
+    </div>
+  </div>

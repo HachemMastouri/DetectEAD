@@ -1,0 +1,73 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+.icon-ai {
+    width: 45px;
+    height: auto;
+    margin-left: 8px;
+  }
+
+.icon-database {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+.icon-check {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+
+  .logo {
+    width: 100px; 
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the title */
+  h1 {
+    color: #ffacd6;
+    margin-bottom: 20px;
+  }
+  
+  /* Center and style the checkboxes */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    background-color: #05baef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #028bb8;
+  }

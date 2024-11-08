@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" class="toolbar">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img src="assets/logo-color.png" alt="logo" class="logo" />
+    </a>
+    <div class="toolbar-buttons">
+        <a routerLink="/ai-info" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/ai.png" alt="ai-info" class="icon-ai" />
+        </a>
+        <a routerLink="/database" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/database.png" alt="database" class="icon-database" />
+        </a>
+        <a routerLink="/check" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img src="assets/check.png" alt="check" class="icon-check" />
+        </a>
+    </div>
+  </mat-toolbar>
+
+  <div class="container">
+    <h1>Suspicious Ips</h1>
+    <div class="checkbox-group">
+      <div *ngFor="let action of actions" class="checkbox-item">
+        <input
+          type="checkbox"
+          [(ngModel)]="action.checked"
+          id="{{ action.label }}"
+        />
+        <label for="{{ action.label }}">{{ action.label }}</label>
+      </div>
+    </div>
+    <button (click)="checkActions()">Delete Selected Actions</button>
+  </div>
