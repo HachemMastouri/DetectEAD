@@ -20,11 +20,40 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 export class SuspDetecteadComponent {
   actions = [
     { label: '192.168.0.21', checked: false },
-    { label: '44.168.0.21', checked: false },
+    { label: '192.2.0.1', checked: false },
     { label: '192.2.0.17', checked: false },
-    { label: '122.178.0.44', checked: false },
     { label: '132.251.0.23', checked: false },
   ];
+
+  private ipPool = [
+    '192.168.40.21',
+    '197.128.0.1',
+    '192.168.4.21',
+    '192.2.0.1',
+    '50.17.249.22',
+    '192.170.24.1',
+    '192.44.0.21',
+    '44.168.0.100',
+    '122.178.0.55',
+    '132.251.0.66',
+    '44.168.0.21',
+    '192.2.0.17',
+    '122.178.0.44',
+    '132.251.0.23',
+  ];
+
+  addIp() {
+    const randomIp = this.ipPool[Math.floor(Math.random() * this.ipPool.length)];
+
+    const exists = this.actions.some(action => action.label === randomIp);
+
+    if (!exists) {
+      this.actions.push({ label: randomIp, checked: false });
+      console.log('IP added:', randomIp);
+    } else {
+      console.log('IP already exists, skipping:', randomIp);
+    }
+  }
 
   checkActions() {
     this.actions = this.actions.filter(action => !action.checked);

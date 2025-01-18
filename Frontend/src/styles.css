@@ -5,4 +5,8 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
     color: #ffffff; /* Facultatif : couleur du texte pour le contraste */
   }
+
+  *{
+    list-style-type:circle;
+  }
   

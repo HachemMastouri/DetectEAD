@@ -1,6 +1,6 @@
 <!-- Toolbar -->
 <mat-toolbar color="primary" class="toolbar">
-    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="selectSet()">
       <img src="assets/logo-color.png" alt="logo" class="logo" />
     </a>
     <div class="toolbar-buttons">
@@ -66,7 +66,7 @@
       <a routerLink="/visualize" routerLinkActive="active" ariaCurrentWhenActive="page">
         <button mat-raised-button color="primary">Visualize</button>
       </a>
-      <a routerLink="/suspactions" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <a routerLink="/suspactions" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="addIp()">
         <button mat-raised-button color="accent">Suspicious Actions</button>
       </a>
       <a routerLink="/notify" routerLinkActive="active" ariaCurrentWhenActive="page">

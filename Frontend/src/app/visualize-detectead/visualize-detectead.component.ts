@@ -28,11 +28,13 @@ export class VisualizeDetecteadComponent implements OnInit{
   createChart(): void {
     const ctx = document.getElementById('networkFlowChart') as HTMLCanvasElement;
 
+    const Data = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 10);
+
     const data = {
       labels: ['44.x', '50.x', '122.x', '132.x', '192.168.x', '192.44.x', '192.2.x', '132.x', '192.170.x', '197.128.x'],
       datasets: [{
         label: 'Usablility Per Minute',
-        data: [30, 40, 50, 45, 120, 60, 70, 65, 80, 90],
+        data: Data,
         borderColor: '#4A90E2',
         backgroundColor: 'rgba(74, 144, 226, 0.2)',
         borderWidth: 2,

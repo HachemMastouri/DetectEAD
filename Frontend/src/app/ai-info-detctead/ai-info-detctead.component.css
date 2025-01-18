@@ -122,6 +122,7 @@
     margin: 10px 0; /* Space between list items */
     padding: 10px; /* Padding inside each list item */
     border-left: 5px solid #007BFF; /* Left border for emphasis */
+    list-style-type: none;
 }
 
 .container {

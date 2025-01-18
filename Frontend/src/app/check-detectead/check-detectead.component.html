@@ -14,3 +14,15 @@
         </a>
     </div>
   </mat-toolbar>
+
+  <div class="check">
+    <div class="checkh1"><h1>Check Suspicious IP</h1></div>
+    <div class="checkform"><input [(ngModel)]="inputIp" placeholder="Enter IP address" />
+        <button (click)="checkIp()" [disabled]="!inputIp">Check</button>
+        <p *ngIf="isLoading">Checking...</p>
+        <p *ngIf="!isLoading && result !== null">
+          IP: {{ inputIp }} is {{ result ? 'Suspicious' : 'Safe' }}.
+        </p>
+        <p *ngIf="!isLoading && !isValid">Invalid IP format. Please enter a valid IP address.</p>
+      </div>
+  </div>
